@@ -10,8 +10,27 @@ export const ASide = styled.aside`
   }
 `
 
+export const NameDev = styled.a`
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: ${(props) => props.theme.nameColor};
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`
+
 export const GithubUser = styled(Parahraph)`
-  text-align: center;
+  margin-top: 16px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 export const Description = styled(Parahraph)`
@@ -26,14 +45,26 @@ export const Description = styled(Parahraph)`
 export const ThemeBtn = styled.button`
   font-size: 10px;
   font-weight: bold;
-  background-color: #282a35;
-  color: #eee;
+  background-color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.backgroundColor};
   padding: 8px;
   border-radius: 12px;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: ${(props) => props.theme.backgroundColorButtonThemeHover};
+    border-radius: 6px;
+  }
 `
 export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `

@@ -5,22 +5,33 @@ import {
   ASide,
   Description,
   GithubUser,
+  NameDev,
   SidebarContainer,
   ThemeBtn
 } from './styles'
 
-const Sidebar = () => (
+type Props = {
+  themeChange: () => void
+}
+
+const Sidebar = (props: Props) => (
   <ASide>
     <SidebarContainer>
       <Avatar />
-      <Title fontSize={20}>Richard Piovezan</Title>
+      <NameDev
+        target="_blank"
+        title="Visit Github profile"
+        href="https://github.com/richard-piovezan"
+      >
+        Richard Piovezan
+      </NameDev>
       <GithubUser type="secondary" fontSize={16}>
         Richard-Piovezan
       </GithubUser>
       <Description type="main" fontSize={12}>
-        Engenheiro Front-End
+        Front-End Developer
       </Description>
-      <ThemeBtn>Trocar Tema</ThemeBtn>
+      <ThemeBtn onClick={props.themeChange}>Change Theme</ThemeBtn>
     </SidebarContainer>
   </ASide>
 )

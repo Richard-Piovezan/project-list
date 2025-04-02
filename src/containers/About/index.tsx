@@ -7,11 +7,11 @@ const About = () => (
     <section>
       <Title fontSize={16}>About Me</Title>
       <Paragraph type="main">
-        Aos 22 anos cursando Análise e Desenvolvimento de Sistemas na Estácio,
-        paralelamente me especializando em FullStack pela Escola Britânica de
-        Artes Criativas & Tecnologia. Afim de dominar as principais tecnologias
-        de desenvolvimento, sempre viso a versatilidade na resolução de
-        problemas e na implementação de novos sistemas.
+        At the age of 22, I am studying Systems Analysis and Development at
+        Estácio, while also specializing in FullStack at the Escola Britânica de
+        Artes Criativas & Tecnologia. In order to master the main development
+        technologies, I always aim for versatility in problem-solving and
+        implementing new systems.
       </Paragraph>
       <GithubSection>
         <img src="https://github-readme-stats.vercel.app/api?username=richard-piovezan&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
