@@ -7,7 +7,7 @@ const LightTheme = {
   nameColor: '#000',
   buttonColor: '#fff',
   backgroundColorButtonThemeHover: '#606060',
-  backgroundColorButtonProjectsHover: '#295391'
+  backgroundColorButtonProjectsHover: '#6391d4'
 }
 
 export default LightTheme
